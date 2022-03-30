@@ -1,0 +1,138 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW" xml:lang="zh-Hant-TW">
+<head>
+<title>Waifupedia &#127800;</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+
+body{
+	/* font-family: 'Courier New'; */
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: '20px';
+	margin-left: 3%;
+	margin-right: 3%;
+	color:#ffffff; 
+	background-color:#111111;
+}
+
+a {
+	color: white;
+	/* text-decoration: none; */
+	text-decoration:underline;
+	text-decoration-style: dotted;
+	text-decoration-color: gold;
+}
+
+a:hover {
+	color: gold;
+	text-decoration: none;
+}
+
+span.nfttext {
+	display: inline-block;
+	width: 280px;
+}
+
+span.nftdisplay {
+	display: inline-block;
+	width: 320px;
+	border: 3px;
+}
+
+span + span {
+	margin-bottom: 2em;
+}
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 6px 13px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Noto Sans TC', sans-serif;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+select {
+	/* appearance: none; */
+	/* background-color: transparent; */
+	border: none;
+	/* padding: 0 1em 0 0; */
+	padding: 4px 10px;
+	/* margin: 0; */
+	margin: 4px 4px;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	cursor: pointer;
+}
+
+input {
+	/* appearance: none; */
+	/* background-color: transparent; */
+	border: none;
+	/* padding: 0 1em 0 0; */
+	padding: 4px 10px;
+	/* margin: 0; */
+	margin: 4px 4px;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	/* cursor: pointer; */
+}
+
+@font-face {
+	font-family: 'Gensai'; 
+	src: url('GenSenRounded-B_0.ttf');
+}
+
+h2.waifu-name-kj {
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	font-size: 18pt;
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+	font-family: 'Gensai', sans-serif;
+	font-weight: bold;
+}
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+</head>
+<body style="color:#ffffff; background-color:#111111">
+
+<h2>Waifupedia &#127800;</h2>
+<h4><input type="text" id="slpAddress" placeholder="simpleledger:" style="width: 500px" />
+	<select name="sort-method" id="sort-method">
+		<option value="none-selected" selected disabled>Sort by:</option>
+		<option value="sort-by-name-ascend" selected="true">Name (A-Z)</option>
+		<option value="sort-by-name-descend">Name (Z-A)</option>
+		<option value="sort-by-token-id-ascend">Token ID (A-Z)</option>
+		<option value="sort-by-token-id-descend">Token ID (Z-A)</option>
+	</select>
+<button class="onShow" onclick="showWaifus(0)">Submit</button></h4>
+
+<div id="number-of-waifus" style="text-align: center"></div>
+<br>
+<div id="waifusdiv" style="text-align: center"></div>
+<script src="script.js?91002"></script>
+
+
+<!-- Footer -->
+<br><br>
+
+<span style="margin-left: 6px"><a href="https://twitter.com/d_liwil_b">d_liwil_b</a></span>
+<br><br>
+<div id="js-log" style="color: gray"></div>
+</body>
+</html>
